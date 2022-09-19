@@ -1,11 +1,13 @@
-import Navbar from "./components/Navbar";
-import Main from "./components/Main";
+import PersonalInfo from "./components/PersonalInfo";
+import MainInfo from "./components/MainInfo"
+import SocialInfo from "./components/SocialInfo";
 
 function App() {
   return (
     <div className="container">
-      <Navbar />
-      <Main />
+      <PersonalInfo />
+      <MainInfo />
+      <SocialInfo />
     </div>
   );
 }

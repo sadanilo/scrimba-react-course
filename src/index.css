@@ -1,62 +1,100 @@
 * {
+margin: 0;
+padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+  margin-top: 10px;
+  font-weight: 700;
+}
+
+h4{
+  font-size: 12px;
+  color: #F3BF99;
+  font-weight: 400
+}
+
+body{
+  background-color: #23252C;
+  color: white;
+  font-family: Inter;
+}
+
+.container{
+  background-color: #1A1B21;
+  width: 350px;
+  margin:auto;
+  margin-top: 25px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.personal-info{
+  text-align: center;
   box-sizing: border-box;
 }
 
-body {
-  margin: 0;
-  font-family: Inter, sans-serif;
-  background-color: #282d35
+.personal-info img{
+  width: 100%;
 }
 
-nav {
+.personal-info p{
+  margin-top: 10px;
+  font-size: 10px;
+}
+
+.info-buttons{
   display: flex;
-  align-items: center;
-  background-color: #21222a;
-  height: 90px;
-  padding: 30px 25px;
+  justify-content: space-between;
+  vertical-align: middle;
+  padding: 0 34px;
 }
-
-nav img {
-  height: 30px;
+.icon{
+  position: relative;
   margin-right: 7px;
+  top: 2px;
 }
 
-nav > h3 {
-  margin-right: auto;
-  color: #61dafb;
-  font-size: 22px;
+.info-buttons a{
+  color: #374151;
+  font-size: 14px;
+  font-style: normal;
+  background-color: #FFFFFF;
+  padding: 9px 13px 9px 11px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 15px;
+  justify-content: space-between;
+  width: 100px;
 }
 
-nav > h4 {
-  color: #deebf8;
-  font-weight: 600;
+.info-buttons a:last-child{
+  background-color: #5093E2;
+  color: white
 }
 
-main {
-  padding: 57px 27px;
-  color: #fff;
-  background-image: url(./assets/react.svg);
-  background-repeat: no-repeat;
-  background-size: 40%;
-  background-position: 134% 75%
+.main-info{
+  margin-top: 33px;
+  padding: 0 34px;
 }
 
-main > h1 {
-  margin: 0;
-  font-size: 39px;
-  letter-spacing: -0.05em;
+.main-info p{
+  margin: 15px 0;
 }
 
-ul {
-  margin-top: 46px;
+.social-info{
+  min-height: 75px;
+  margin-top: 24px;
+  background-color: #161619;
+  color: #FFFFFF;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
 }
 
-ul > li{
-  line-height: 19px;
-  padding-block: 10px;
-}
-
-ul > li::marker{
-  font-size: 1.4rem;
-  color: #61dafb
+.social-info  .icon{
+  margin-top: 10px;
+  color: #918E9B;
+  font-size: 40px;
 }
